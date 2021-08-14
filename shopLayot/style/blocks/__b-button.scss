@@ -1,0 +1,13 @@
+@import "../variables/_variables";
+.b-button {
+    border: 1px solid $altColor;
+    background: none;
+    padding: 15px 39px;
+    font-family: $mainFont;
+    color: $altColor;
+    cursor: pointer;
+    &:hover {
+        background: $altColor;
+        color: $lightColor;
+    }
+}

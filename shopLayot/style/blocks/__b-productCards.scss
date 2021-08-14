@@ -1,0 +1,39 @@
+@import "../variables/_variables";
+.b-productCards {
+    display: flex;
+    flex-direction: column;
+    &__header {
+        font-size: 30px;
+        line-height: 36px;
+        font-family: $mainFont;
+        color: $mainColor;
+        margin: 0;
+        align-self: center;
+    }
+    &__headerDescription {
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $mainFont;
+        color: $descriptionColor;
+        margin: 0 0 48px 0;
+        align-self: center;
+    }
+    &__cardsHolder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        @media(max-width: 1140px) {
+            padding: 0 15px;
+        }
+        @media(max-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width: 500px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__button {
+        display: block;
+        margin: 32px auto 64px auto;
+    }
+}

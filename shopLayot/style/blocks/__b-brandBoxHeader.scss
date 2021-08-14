@@ -1,0 +1,46 @@
+@import "../variables/_variables";
+.b-brandBoxHeader {
+    border-left: 12px solid $altColor;
+    padding-left: 16px;
+    font-family: $mainFont;
+    &__headerInfo {
+        font-weight: 750;
+        font-size: 48px;
+        line-height: 58px;
+        color: $mainColor;
+        margin: 0;
+        @media(max-width: 700px) {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+    &__description {
+        margin: 0;
+        color: $mainColor;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        @media(max-width: 980px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        @media(max-width: 700px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .b-brandBoxHeader__description_pink {
+            color: $altColor;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 38px;
+            @media(max-width: 980px) {
+                font-size: 24px;
+                line-height: 29px;
+            }
+            @media(max-width: 700px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}

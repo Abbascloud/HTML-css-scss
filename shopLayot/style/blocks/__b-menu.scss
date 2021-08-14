@@ -1,0 +1,41 @@
+@import "../variables/_variables";
+.b-menu {
+    padding-left: 30px;
+    padding-right: 70px;
+    height: 100%;
+    background: $lightColor;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__topHeader {
+        font-family: $mainFont;
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 36px;
+    }
+    &__esc {
+        position: absolute;
+        top: 16px;
+        right: -40px;
+        cursor: pointer;
+    }
+    &__chapterHeader {
+        font-size: 14px;
+        line-height: 17px;
+        color: $altColor;
+        margin-top: 50px;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__listItem {
+        font-family: $mainFont;
+        margin-bottom: 11px;
+        font-size: 14px;
+        line-height: 17px;
+        color: $descriptionColor;
+    }
+}

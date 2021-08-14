@@ -1,0 +1,56 @@
+@import "../variables/_variables";
+.b-productCard {
+    cursor: pointer;
+    background: #F8F8F8;
+    &__imgHolder {
+        position: relative;
+    }
+    &__imgDark {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(58, 56, 56, 0.86);
+        display: flex;
+        justify-content: center;
+    }
+    &__imgButton {
+        background: none;
+        color: $lightColor;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $mainFont;
+        padding: 11px 16px 9px 14px;
+        border: 1px solid $lightColor;
+        align-self: center;
+        display: flex;
+        align-content: center;
+    }
+    &__imgCartText {
+        align-self: center;
+    }
+    &__imgCart {
+        margin-right: 11px;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+    }
+    &__header {
+        font-size: 13px;
+        line-height: 16px;
+        color: $mainColor;
+        font-family: $mainFont;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $mainFont;
+        color: $cardDescColor;
+    }
+    &__price {
+        font-size: 16px;
+        line-height: 19px;
+        color: $altColor;
+    }
+}

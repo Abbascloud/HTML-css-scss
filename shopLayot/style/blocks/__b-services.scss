@@ -1,0 +1,24 @@
+@import "../variables/_variables";
+.b-services {
+    background: $serviceBackground;
+    &__holder {
+        display: flex;
+        padding: 103px 15px;
+        @media(max-width: 800px) {
+            flex-direction: column;
+            padding: 48px 0 64px 0;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-right: 30px;
+        @media(max-width: 800px) {
+            margin: 0 0 48px 0;
+        }
+    }
+    &__item {
+        @media(max-width: 800px) {
+            max-width: 360px;
+            align-self: center;
+        }
+    }
+}
