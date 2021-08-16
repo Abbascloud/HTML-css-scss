@@ -1,0 +1,88 @@
+@import "../variables/_variables";
+.b-userBlock {
+    background-image: url(/shopLayot/data/img/backgraunds/subscribeBackgraund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 97px 0 126px;
+    &__holder {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media(max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    &__avatarBox {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__avatarImg {
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    &__avatarDescription {
+        font-size: 20px;
+        line-height: 24px;
+        columns: $mainColor;
+        font-family: $mainFont;
+        text-align: center;
+    }
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 800px) {
+            padding-top: 60px;
+        }
+    }
+    &__subscribeHeder {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 167.2%;
+        font-family: $mainColor;
+        color: $mainColor;
+        text-align: center;
+        margin: 0;
+    }
+    &__subscribeDescription {
+        font-size: 18px;
+        line-height: 167.2%;
+        text-align: center;
+        font-family: $mainFont;
+        color: $mainColor;
+        margin: 0;
+    }
+    &__subscribeForm {
+        margin-top: 30px;
+        align-self: center;
+        display: flex;
+    }
+    &__input {
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $mainFont;
+        opacity: 0.67;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding: 15px 150px 15px 19px;
+        background: $inputBackground;
+        margin: 0;
+        border: none;
+        @media(max-width: 450px) {
+            padding-right: 40px;
+        }
+    }
+    &__button {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 15px 19px 15px 13px;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $mainFont;
+        color: $lightColor;
+        background-color: $altColor;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+    }
+}
